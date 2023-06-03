@@ -1,0 +1,105 @@
+ /* import font */
+ @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+
+/* variables */
+:root {
+    --background-color: #F8FAFD;
+    --font-color: #555555;
+    --primary-color: #253C78;
+    --font-style: 'Source Serif Pro';
+  }
+
+
+.primary-color{
+    background-color:var(--primary-color);
+    color:var(--background-color);
+} 
+.primary-text-color{
+    color:var(--primary-color);
+}
+.primary-border{
+  border:1px solid var(--primary-color)!important;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  font-family: var(--font-style), serif;   
+  margin: 0 auto;
+  color: var(--font-color);    
+  text-decoration: none;
+  max-width: 450px;
+  text-align: center;
+  background-color:var(--background-color);
+  box-shadow: 1px 1px 15px rgba(107, 128, 168, 0.2);
+  }
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-style), serif; 
+}
+/* bold class */
+  .bold {
+    font-weight: 900;
+  }
+
+  /* vertical spacer */
+  .azr5 {
+    padding-top: 5px;
+  }
+  .azr10 {
+    padding-top: 10px;
+  }
+  .azr15 {
+    padding-top: 15px;
+  }
+  .azr20 {
+    padding-top: 20px;
+  }
+  .azr25 {
+    padding-top: 25px;
+  }
+  .azr30 {
+    padding-top: 30px;
+  }
+  .azr40 {
+    padding-top: 40px;
+  }
+  .azr100 {
+    padding-top: 100px;
+  }
+
+  /* horizontal rule */
+  .hr {
+    position: relative;
+    border: none;
+    height: 2px;
+    margin-bottom: 10px;
+  }
+
+
+  .go-back button{
+    position: fixed;
+    display: block;
+    bottom: 100px;
+    right: 10px;  
+    z-index: 9999;
+  }
+
+  /* slider */
+
+  .swiper-container {
+    height: 100vh;
+  }
+  
+  .swiper-slide {
+    height: 100vh;
+    text-align: justify;
+  }
+
+  /* blog */
+  .content-img{
+    width:100%;
+    height:50vh;
+  }
