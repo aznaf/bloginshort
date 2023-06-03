@@ -5,6 +5,14 @@ var mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    keyboard: {
+      enabled: true,
+    },
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 2,
+      loadOnTransitionStart: true
+    }
   });
   
   
@@ -30,7 +38,8 @@ var mySwiper = new Swiper('.swiper-container', {
         const newBlogHtml = newBlogs.map(blog => `
           <div class="swiper-slide">
             <div class="w3-padding">
-              <img src="${blog.image}" class="w3-round-xlarge content-img" >
+              <img src="${blog.image}" class="w3-round-xlarge content-img"><br><br>
+              <span class="w3-card w3-small w3-padding w3-round-xxlarge">Author</span><br>
               <p class="w3-margin">${blog.content}</p>
             </div>
           </div>
