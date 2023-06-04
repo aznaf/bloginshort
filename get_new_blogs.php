@@ -1,7 +1,11 @@
 <?php
 include("connect.php");
 // Assuming you have established a mysqli connection in $conn
-$sql = "SELECT * FROM blogs ORDER BY RAND() LIMIT 25"; // Fetch 5 random blog items
+$sql = "SELECT b.*, c.category_name
+FROM blogs b
+INNER JOIN category c ON b.category = c.id
+ORDER BY RAND()
+LIMIT 50"; // Fetch 5 random blog items
 $result = mysqli_query($conn, $sql);
 
 $newBlogs = array(); // Create an empty array for new blog data
@@ -11,7 +15,7 @@ while($blog = mysqli_fetch_assoc($result)) {
   $newBlogItem = array(
     'image' => $blog['image'],
     'content' => $blog['content'],
-    'category' => $blog['category']
+    'category' => $blog['category_name']
   );
   array_push($newBlogs, $newBlogItem);
 }

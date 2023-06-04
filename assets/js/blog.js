@@ -39,7 +39,7 @@ var mySwiper = new Swiper('.swiper-container', {
           <div class="swiper-slide">
             <div class="w3-padding">
               <img src="${blog.image}" class="w3-round-xlarge content-img"><br><br>
-              <span class="w3-card w3-small w3-padding w3-round-xxlarge">Author</span><br>
+              <span class="w3-card primary-color w3-small w3-padding w3-round-xxlarge">${blog.category}</span><br>
               <p class="w3-margin">${blog.content}</p>
             </div>
           </div>
@@ -70,6 +70,7 @@ var mySwiper = new Swiper('.swiper-container', {
           <div class="swiper-slide">
             <div class="w3-padding">
               <img src="${blog.image}" class="w3-round-xlarge content-img" >
+              <span class="w3-card primary-color w3-small w3-padding w3-round-xxlarge">${blog.category}</span><br>
               <p class="w3-margin">${blog.content}</p>
               
             </div>
