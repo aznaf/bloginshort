@@ -1,7 +1,4 @@
 <?php
-
-
-
 function getpixabay($query) {
 
     $key = '3522345-f6cf38662eb1caa6cf4cadaf5';
