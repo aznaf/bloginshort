@@ -35,7 +35,7 @@ function getpexels($query, $orientation = 'landscape', $per_page = 20, $page = 1
   $large_images = array();
 
   foreach ($response['photos'] as $photo) {
-    $large_image = $photo['src']['original'];
+    $large_image = $photo['src']['large'];
     array_push($large_images, $large_image);
   }
 

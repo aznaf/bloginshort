@@ -1,6 +1,7 @@
 
 <?php
-
+// include('autoload.php');
+// echo gpt('hi');
 function gpt($prompt) {
   $API_KEY = 'Authorization: Bearer '.$_ENV['openai_key'];
 $curl = curl_init();

@@ -34,19 +34,19 @@ $random_index = array_rand($largeimageslist);
 $random_image = $largeimageslist[$random_index];
 
 $url = $random_image;  // replace with the actual image URL
-$filename = basename($url);  // extract the filename from the URL
-$folder = 'images/';  // specify the folder where you want to save the image
+// $filename = basename($url);  // extract the filename from the URL
+// $folder = 'images/';  // specify the folder where you want to save the image
 
-// download the image from the URL
-$data = file_get_contents($url);
+// // download the image from the URL
+// $data = file_get_contents($url);
 
-// save the downloaded image to the specified folder
-$file = fopen($folder . $filename, "w");
-fwrite($file, $data);
-fclose($file);
+// // save the downloaded image to the specified folder
+// $file = fopen($folder . $filename, "w");
+// fwrite($file, $data);
+// fclose($file);
 
-$image = $folder . $filename;
-
+// $image = $folder . $filename;
+$image = $url; 
 
 // create blog content 
 $content = gpt("write a small article less than 100 words which is apealing to parents and make them to think title : ".$category);
